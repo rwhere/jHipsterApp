@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "son",
+            "otherEntityName": "son",
+            "otherEntityRelationshipName": "father"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "daughter",
+            "otherEntityName": "daughter",
+            "otherEntityRelationshipName": "father"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "age",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20170202070952",
+    "entityTableName": "father",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "no",
+    "angularJSSuffix": "mySuffix"
+}

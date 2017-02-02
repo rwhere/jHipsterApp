@@ -1,0 +1,27 @@
+entity Father {
+	name String,
+    age Integer
+}
+
+entity Son {
+	name String,
+    age Integer
+}
+
+entity Daughter {
+	name String,
+    age Integer
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Father{Son} to Son,
+	Father{Daughter} to Daughter
+}
+
+
+
+dto * with mapstruct
+
+// Set an angular suffix
+angularSuffix * with mySuffix
